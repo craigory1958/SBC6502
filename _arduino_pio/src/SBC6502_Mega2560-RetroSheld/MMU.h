@@ -7,7 +7,7 @@
 //  └┬┴┬┴─────┬─────┘
 //   │ │      └───────┤ PID (1-6 bits) 
 //   │ │              
-//   │ └──────────────┤ ~Kernal Mode (0 is enabled) / User Mode (1 is enabled)
+//   │ └──────────────┤ ~Kernel Mode (0 is enabled) / User Mode (1 is enabled)
 //   │                
 //   └────────────────┤ ~Boot Mode (0 is enabled) / Address Translate Mode (1 is enanled)
 //                    
@@ -103,7 +103,7 @@ byte mmu_ram[mmu_RAM_END - mmu_RAM_START +1] ;
 byte mmu_r0 ;
 
 #define   mmu_boot(r0)        ( (r0 & BIT7) >> 7 )
-#define   mmu_kernal(r0)      ( (r0 & BIT6) >> 6 )
+#define   mmu_kernel(r0)      ( (r0 & BIT6) >> 6 )
 #define   mmu_PID(r0, r3)     ( r0 & mmu_PIDMask(r3) )
 
 
@@ -234,8 +234,8 @@ void mmu_writeByteToMemory(byte data) {}
 
 void mmu_dump(){
 
-    printf("  R0:  0x%02X,    Boot: 0x%X,  Kernal: 0x%X,    PID: 0x%02X \n",
-       mmu_r0, mmu_boot(mmu_r0), mmu_kernal(mmu_r0),     mmu_PID(mmu_r0, mmu_r1));
+    printf("  R0:  0x%02X,    Boot: 0x%X,  Kernel: 0x%X,    PID: 0x%02X \n",
+       mmu_r0, mmu_boot(mmu_r0), mmu_kernel(mmu_r0),     mmu_PID(mmu_r0, mmu_r1));
     printf("  R1:  0x%02X \n", mmu_r1) ;
 
     printf(" CR0:  0x%02X,  #segBits: %d,  #offBits: %d \n",

@@ -173,8 +173,8 @@ void debug() {
     mmu_dump();
 
 
-    // Kernal Mode
-    Serial.println("\n Kernal Mode");
+    // Kernel Mode
+    Serial.println("\n Kernel Mode");
 
     SYNC = 0 ;
     RW = 1 ;
