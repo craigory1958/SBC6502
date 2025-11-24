@@ -8,6 +8,6 @@ The Single Board Computer for 6502 is an amateur project to explore and understa
 
 # RetroShield 6502
 
-A [*RetroShield 6502*](https://github.com/craigory1958/RetroShield-6502.git) is used to develop and debug software and hradwar sinplets.
+A [*RetroShield 6502*](https://github.com/craigory1958/RetroShield-6502.git) is used to develop and debug software and hardware sinplets.
 
 <img src="_assets/images/RetroShield 6502.jpg">
