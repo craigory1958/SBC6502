@@ -2,15 +2,13 @@
 
 # Single Board Computer for 6502 Microprocessors (SBC6502)
 
-*A lifelong learning experience ...*
-
-## [Overview](README_Overview.md) &nbsp;&nbsp; <sub>[Hardware](README_SBC6502.md)</sub> &nbsp;&nbsp; <sub>[Virtual Memory Kernel](README_VMK.md)</sub>
+## [Overview](README_Overview.md) &nbsp;&nbsp; <sub>[SBC6502 Hardware](README_SBC6502.md)</sub> &nbsp;&nbsp; <sub>[Virtual Memory Kernel (VMK)](README_VMK.md)</sub>
 
 *A lifelong learning experience ...*
 
 <br/>
 
-The Single Board Computer for 6502 is an amateur project to explore and understand the computer-science around multi-tasking operating systems and virtual memory hardware.  The 6502 processor was chosen for its software and hardware simplicity.  And as a nod to the KIM-1 used in my undergraduate work.  All design decisions lean towards simplicity and implementing minimum needed to research the stated topics using small to medium scale integration (7400 series logic).
+The *Single Board Computer for 6502 Microprocessors* is my amateur project to explore and understand the computer-science around multi-tasking operating systems and virtual memory hardware.  The 6502 processor was chosen for its software and hardware simplicity.  And as a nod to the KIM-1 used in an undergraduate term assignment.  All design decisions lean towards simplicity and implementing minimum needed to research the stated topics using small to medium scale integration (7400 series logic).
 
 ### Virtual Memory Kernel (VNK)
 
