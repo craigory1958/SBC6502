@@ -6,11 +6,9 @@
 
 *A lifelong learning experience ...*
 
-<br/>
+The *Single Board Computer for 6502 Microprocessors* is my amateur project to explore and understand the computer-science around multi-tasking operating systems and virtual memory hardware.  The 6502 processor was chosen for its software and hardware simplicity (and challanges.)  And as a nod to the KIM-1 used in an undergraduate project assignment.  All design decisions lean towards simplicity and implementing the minimum needed to study the stated topics using small to medium scale integration (7400 series logic).
 
-The *Single Board Computer for 6502 Microprocessors* is my amateur project to explore and understand the computer-science around multi-tasking operating systems and virtual memory hardware.  The 6502 processor was chosen for its software and hardware simplicity.  And as a nod to the KIM-1 used in an undergraduate term assignment.  All design decisions lean towards simplicity and implementing minimum needed to research the stated topics using small to medium scale integration (7400 series logic).
-
-### Virtual Memory Kernel (VNK)
+### Virtual Memory Kernel (VMK)
 
 •   Multi-Tasking – More than one active process in memory at a time.
 
@@ -27,9 +25,9 @@ The *Single Board Computer for 6502 Microprocessors* is my amateur project to ex
 
 •   A configurable MMU allowing variable address bus widths and page sizes.
 
-•   Up to a 32-bit 4294MB address space divided into RAM, ROM and memory mapped I/O.
+•   Up to a 24-bit 4294MB address space shared by RAM, ROM and memory mapped I/O.
 
-•   Page sizes varying from 512 bytes thru 4KB.
+•   Page sizes vary from 512 bytes thru 4KB.
 
 •   All primary control logic (MMU, memory decoding, etc.) will be implemented with 7400 series ICs.
 
