@@ -18,9 +18,7 @@ Requirements for the Virtual Memory Kernel (VMK) are:
 
 *   Preemptive Tasking – Processes are blocked to allow other processes access to computer resources.
 
-*   Kernel Mode – Processes may run in an unprotected mode allowing access to all computing resources.
-
-*   User Mode – Processes may run in protected mode protecting computing resources from other processes.
+*   Kernel/User Mode – Certain system resources are protected from processes running in user mode.
 
 *   Virtual Memory – Each process sees a continuous 64KB memory environment.
 

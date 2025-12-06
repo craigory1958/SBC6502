@@ -18,7 +18,11 @@ The *Single Board Computer for 6502 Microprocessors** is my amateur project to e
 
 <!--- MARKUP.MARK.TEXT.STOP: ID=SBC6502.Teaser -->
 
-This is both a software and hardware project.  Yes, hardware is needed to map the 6502’s physical 16-bit address space into a 24-bit virtual memory address space.  But software is needed to implement a preemptive multi-tasking system.
+Ultimately this is both a hardware and software project.  Yes, hardware is needed to map the 6502’s physical 16-bit address space into a 24-bit virtual memory address space.  But software is required to manage and monitor virtual memory as processes are executed by the 6502 microprocessor. 
+
+The Memory Management Unit (MMU) provides architectural enhancements to the 6502 that the Virtual Memory Kernel (VMK) relies on to meet its requirement goals.    VMK requirements are listed here to remind me of the final endgame of this project.
+[VMK6502](https://github.com/craigory1958/VMK6502.git) is a separate GitHub project supporting the development of the VMK.
+
 
 <!--- MARKUP.INSERT.TEXT.START: ID=VMK.Reqs -->
 Requirements for the Virtual Memory Kernel (VMK) are:
@@ -27,9 +31,7 @@ Requirements for the Virtual Memory Kernel (VMK) are:
 
 *   Preemptive Tasking – Processes are blocked to allow other processes access to computer resources.
 
-*   Kernel Mode – Processes may run in an unprotected mode allowing access to all computing resources.
-
-*   User Mode – Processes may run in protected mode protecting computing resources from other processes.
+*   Kernel/User Mode – Certain system resources are protected from processes running in user mode.
 
 *   Virtual Memory – Each process sees a continuous 64KB memory environment.
 <!--- MARKUP.INSERT.TEXT.STOP: ID=VMK.Reqs -->
