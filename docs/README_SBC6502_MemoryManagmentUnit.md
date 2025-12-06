@@ -8,6 +8,21 @@
 
 *A lifelong learning experience ...*
 
+The requirement for the Memory Management Unit (MMU) are:
+<!--- MARKUP.MARK.TEXT.START: ID=MMU.Reqs -->
+
+•   Multi-Tasking – More than one active process in memory at a time.
+
+•   Preemptive Tasking – Processes are blocked to allow other processes access to computer resources.
+
+•   Kernel Mode – Processes may run in an unprotected mode allowing access to all computing resources.
+
+•   User Mode – Processes may run in protected mode protecting computing resources from other processes.
+
+•   Virtual Memory – Each process sees a continuous 64KB memory environment.
+<!--- MARKUP.MARK.TEXT.STOP: ID=MMU.Reqs -->
+
+
 The MMU’s Configuration Registers (CR0 & CR1) are programmable at boot time and determine how the MMU will function.
 
 The MMU has 2 memory-mapped configuration registers that control:
