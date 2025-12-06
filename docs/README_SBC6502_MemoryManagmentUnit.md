@@ -8,18 +8,18 @@
 
 *A lifelong learning experience ...*
 
-The requirement for the Memory Management Unit (MMU) are:
 <!--- MARKUP.MARK.TEXT.START: ID=MMU.Reqs -->
 
-•   Multi-Tasking – More than one active process in memory at a time.
+Requirements for the Memory Management Unit (MMU) are:
 
-•   Preemptive Tasking – Processes are blocked to allow other processes access to computer resources.
+*   A configurable MMU allowing variable address bus widths and page sizes.
 
-•   Kernel Mode – Processes may run in an unprotected mode allowing access to all computing resources.
+*   Up to a 24-bit 4294MB address space shared by RAM, ROM and memory mapped I/O.
 
-•   User Mode – Processes may run in protected mode protecting computing resources from other processes.
+*   Page sizes vary from 512 bytes thru 4KB.
 
-•   Virtual Memory – Each process sees a continuous 64KB memory environment.
+*   All primary control logic will be implemented with 7400 series ICs.
+
 <!--- MARKUP.MARK.TEXT.STOP: ID=MMU.Reqs -->
 
 

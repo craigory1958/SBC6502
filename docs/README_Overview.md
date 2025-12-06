@@ -10,34 +10,40 @@
 
 The *Single Board Computer for 6502 Microprocessors** is my amateur project to explore and understand the computer-science around multi-tasking operating systems and virtual memory hardware.  The 6502 processor was chosen for its software and hardware simplicity (and challanges.)  And as a nod to the KIM-1 used in an undergraduate project assignment.  All design decisions lean towards simplicity and implementing the minimum needed to study the stated topics using small to medium scale integration (7400 series logic).
 
-*Click bait - after thinking about the goals of this project, I scraped the idea (at this time) of a single board computer.  I want to swap out the virtual memory hardware trying out different designs.  And the projected chip count of the necessitates the use of a computer backplane design with inserted logic cards.  A backplane allows the replacement of modular logic sections until a final design is hammered out.  Although SBC6502 is a misnomer, it will continue to be used as the project name (and GitHub repo name.)
+*Click bait - after thinking about the goals of this project, I scraped the idea (at this time) of a single board computer.  I will want to swap out the virtual memory hardware to try out different solutions.  And the projected chip count of the memory management logic necessitates the use of a computer backplane design with modular logic cards.  A backplane allows the replacement of logic sections until the final design is hammered out.  Although “SBC6502” is a misnomer, it will continue to be used as the project name (and GitHub repo name.)
 
 <!--- MARKUP.MARK.TEXT.STOP: ID=SBC6502.Teaser -->
 
-This is both a hardware and software project.
+This is both a software and hardware project.  Yes, hardware is needed to map the 6502’s physical 16-bit address space into a 24-bit virtual memory address space.  But software is needed to implement a preemptive multi-tasking system.
 
-### Virtual Memory Kernel (VMK)
+<!--- MARKUP.INSERT.TEXT.START: ID=VMK.Reqs -->
+Requirements for the Virtual Memory Kernel (VMK) are:
+
+*   Multi-Tasking – More than one active process in memory at a time.
+
+*   Preemptive Tasking – Processes are blocked to allow other processes access to computer resources.
+
+*   Kernel Mode – Processes may run in an unprotected mode allowing access to all computing resources.
+
+*   User Mode – Processes may run in protected mode protecting computing resources from other processes.
+
+*   Virtual Memory – Each process sees a continuous 64KB memory environment.
+<!--- MARKUP.INSERT.TEXT.STOP: ID=VMK.Reqs -->
+
 <!--- MARKUP.INSERT.TEXT.START: ID=MMU.Reqs -->
-•   Multi-Tasking – More than one active process in memory at a time.
+Requirements for the Memory Management Unit (MMU) are:
 
-•   Preemptive Tasking – Processes are blocked to allow other processes access to computer resources.
+*   A configurable MMU allowing variable address bus widths and page sizes.
 
-•   Kernel Mode – Processes may run in an unprotected mode allowing access to all computing resources.
+*   Up to a 24-bit 4294MB address space shared by RAM, ROM and memory mapped I/O.
 
-•   User Mode – Processes may run in protected mode protecting computing resources from other processes.
+*   Page sizes vary from 512 bytes thru 4KB.
 
-•   Virtual Memory – Each process sees a continuous 64KB memory environment.
+*   All primary control logic will be implemented with 7400 series ICs.
 <!--- MARKUP.INSERT.TEXT.STOP: ID=MMU.Reqs -->
 
+Other general goals and requirements:
 
-### Memory Management Unit (MMU)
+* All contol logic will be implemented with Small Scale Intefration (SSI) 7400 series ICs.  (We will not be using the 74610, 611, 612 or 631 ICs.)
 
-•   A configurable MMU allowing variable address bus widths and page sizes.
-
-•   Up to a 24-bit 4294MB address space shared by RAM, ROM and memory mapped I/O.
-
-•   Page sizes vary from 512 bytes thru 4KB.
-
-•   All primary control logic (MMU, memory decoding, etc.) will be implemented with 7400 series ICs.
-
-•   Arduinos may be used to implement complex I/O devices such as video, mass storage and serial communication.
+* Arduinos may be used to implement complex I/O devices such as video, mass storage and serial communication.
