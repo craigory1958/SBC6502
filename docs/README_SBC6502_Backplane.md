@@ -6,7 +6,11 @@
 
 ## [Bus/Backplane](README_SBC6502_Backplane.md) &nbsp;&nbsp; <sub>[Processor/Memory Managment Unit (MMU)](README_SBC6502_MemoryManagmentUnit.md)</sub> &nbsp;&nbsp; <sub>[Memory (ROM/RAM)](README_SBC6502_Memory.md)</sub> &nbsp;&nbsp; <sub>[I/O](README_SBC6502_IO.md)</sub>
 
-*A lifelong learning experience ...*
+<!--- MARKUP.INSERT.TEXT.START: ID=SBC6502.Header -->
+***A lifelong learning experience ...***
+
+---
+<!--- MARKUP.INSERT.TEXT.STOP: ID=SBC6502.Header -->
 
 
 <img src="_assets/images/sc701-assembled-c-w600.jpg">

@@ -4,7 +4,11 @@
 
 ## <sub>[Overview](README_Overview.md) &nbsp;&nbsp;</sub> <sub>[SBC6502 Hardware](README_SBC6502.md)</sub> &nbsp;&nbsp; <sub>[Virtual Memory Kernel (VMK)](README_VMK.md)</sub>
 
-*A lifelong learning experience ...*
+<!--- MARKUP.MARK.TEXT.START: ID=SBC6502.Header -->
+***A lifelong learning experience ...***
+
+---
+<!--- MARKUP.MARK.TEXT.STOP: ID=SBC6502.Header -->
 
 <!--- MARKUP.INSERT.TEXT.START: ID=SBC6502.Teaser -->
 The *Single Board Computer for 6502 Microprocessors** is my amateur project to explore and understand the computer-science around multi-tasking operating systems and virtual memory hardware.  The 6502 processor was chosen for its software and hardware simplicity (and challanges.)  And as a nod to the KIM-1 used in an undergraduate project assignment.  All design decisions lean towards simplicity and implementing the minimum needed to study the stated topics using small to medium scale integration (7400 series logic).
@@ -16,6 +20,6 @@ The *Single Board Computer for 6502 Microprocessors** is my amateur project to e
 
 # RetroShield 6502
 
-A [*RetroShield 6502*](https://github.com/craigory1958/RetroShield-6502.git) is used to develop and debug software and hardware sinplets.
+A [*RetroShield 6502*](https://github.com/craigory1958/RetroShield-6502.git) is used to develop and debug software and hardware sniplets.  The setup below is an experiment to see if toggling the RDY line could be used to single-step the 6502.  (It looks promising.)
 
 <img src="_assets/images/RetroShield 6502.jpg">

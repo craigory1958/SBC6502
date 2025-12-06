@@ -6,4 +6,8 @@
 
 ## <sub>[Bus/Backplane](README_SBC6502_Backplane.md)</sub> &nbsp;&nbsp; <sub>[Processor/Memory Managment Unit (MMU)](README_SBC6502_MemoryManagmentUnit.md)</sub> &nbsp;&nbsp; [Memory (ROM/RAM)](README_SBC6502_Memory.md) &nbsp;&nbsp; <sub>[I/O](README_SBC6502_IO.md)</sub>
 
-*A lifelong learning experience ...*
+<!--- MARKUP.INSERT.TEXT.START: ID=SBC6502.Header -->
+***A lifelong learning experience ...***
+
+---
+<!--- MARKUP.INSERT.TEXT.STOP: ID=SBC6502.Header -->

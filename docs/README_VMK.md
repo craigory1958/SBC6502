@@ -4,7 +4,11 @@
 
 ## <sub>[Overview](README_Overview.md) &nbsp;&nbsp;</sub> <sub>[Hardware](README_SBC6502.md)</sub> &nbsp;&nbsp; [Virtual Memory Kernel](README_VMK.md)
 
-*A lifelong learning experience ...*
+<!--- MARKUP.INSERT.TEXT.START: ID=SBC6502.Header -->
+***A lifelong learning experience ...***
+
+---
+<!--- MARKUP.INSERT.TEXT.STOP: ID=SBC6502.Header -->
 
 <!--- MARKUP.MARK.TEXT.START: ID=VMK.Reqs -->
 
