@@ -11,9 +11,9 @@
 <!--- MARKUP.MARK.TEXT.STOP: ID=SBC6502.Header -->
 
 <!--- MARKUP.INSERT.TEXT.START: ID=SBC6502.Teaser -->
-The *Single Board Computer for 6502 Microprocessors** is my amateur project to explore and understand the computer-science around multi-tasking operating systems and virtual memory hardware.  The 6502 processor was chosen for its software and hardware simplicity (and challanges.)  And as a nod to the KIM-1 used in an undergraduate project assignment.  All design decisions lean towards simplicity and implementing the minimum needed to study the stated topics using small to medium scale integration (7400 series logic).
+The *Single Board Computer for 6502 Microprocessors** is my amateur project to explore and understand the computer-science around multi-tasking operating systems and virtual memory hardware.  The 6502 processor was chosen for its software and hardware simplicity (and challenges.)  And as a nod to the KIM-1 used in an undergraduate project assignment.  All design decisions lean towards simplicity and implementing the minimum needed to study the stated topics using small to medium scale integration (7400 series logic).
 
-> *Click bait - after thinking about the goals of this project, I scraped the idea (at this time) of a single board computer.  I want to swap out the virtual memory hardware to try out different solutions.  And the projected chip count of the memory management logic necessitates the use of a computer backplane design with modular logic cards.  A backplane allows the replacement of logic sections until the final design is hammered out.  Although “SBC6502” is a misnomer, it will continue to be used as the project name (and GitHub repo name.)
+> *Click bait - after thinking about the goals of this project, I scraped the idea (at this time) of a single board computer.  I may want to swap out the virtual memory hardware to try out different solutions, for example.  And the projected chip count of the memory management logic necessitates the use of a computer backplane design with modular logic cards.  A backplane allows the replacement of logic sections until the final design is hammered out.  Although “SBC6502” is a misnomer, it will continue to be used as the project name (and GitHub repo name.)
 <!--- MARKUP.INSERT.TEXT.STOP: ID=SBC6502.Teaser -->
 
 ---

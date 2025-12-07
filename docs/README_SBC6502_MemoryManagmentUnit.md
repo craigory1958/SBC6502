@@ -22,6 +22,10 @@ Requirements for the Memory Management Unit (MMU) are:
 
 *   Page sizes vary from 512 bytes thru 4KB.
 
+*   Support for Kernel/User modes.
+
+*   Support for a boot mode.
+
 *   All primary control logic will be implemented with 7400 series ICs.
 
 <!--- MARKUP.MARK.TEXT.STOP: ID=MMU.Reqs -->
