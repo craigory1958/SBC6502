@@ -18,15 +18,15 @@ Requirements for the Memory Management Unit (MMU) are:
 
 *   A configurable MMU allowing variable address bus widths and page sizes.
 
-*   Up to a 24-bit 4294MB address space shared by RAM, ROM and memory mapped I/O.
+*   Up to a 24-bit 16MB address space shared by RAM, ROM and memory mapped I/O.
 
 *   Page sizes vary from 512 bytes thru 4KB.
 
-*   Support for Kernel/User modes.
+*   Support of Kernel and User modes.
 
-*   Support for a boot mode.
+*   Support of a boot mode.
 
-*   All primary control logic will be implemented with 7400 series ICs.
+*   All control logic will be implemented with Small Scale Integration (SSI) 7400 series ICs.  (We will not be using the 74610, 611, 612 or 631 ICs.)  However, LSI devices (and Arduinos) may be used for complex functions such as video, mass storage and serial communication.
 
 <!--- MARKUP.MARK.TEXT.STOP: ID=MMU.Reqs -->
 
@@ -41,3 +41,17 @@ The MMU has 2 memory-mapped configuration registers that control:
 * The number of process bits used to address a page segment
 
 The MMU provides a protected Kernal Mode by intercepting the BRK and RTI instructions. 
+
+
+* R0 - Mode Register (0x0200)
+
+```
+    ┌─┬─┬───────────┐
+    │7 6 5 4 3 2 1 0│
+    └┬┴┬┴─────┬─────┘
+     │ │      └───────┤ PID (1-6 bits) 
+     │ │              
+     │ └──────────────┤ ~Kernel Mode (0 is enabled) / User Mode (1 is enabled)
+     │                
+     └────────────────┤ ~Boot Mode (0 is enabled) / Address Translate Mode (1 is enanled)
+```
