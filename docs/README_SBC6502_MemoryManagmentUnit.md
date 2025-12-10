@@ -4,7 +4,7 @@
 
 ## <sub>[Overview](README_Overview.md) &nbsp;&nbsp;</sub> [SBC6502 Hardware](README_SBC6502.md) &nbsp;&nbsp; <sub>[Virtual Memory Kernel (VMK)](README_VMK.md)</sub>
 
-## <sub>[Bus/Backplane](README_SBC6502_Backplane.md)</sub> &nbsp;&nbsp; [Processor/Memory Managment Unit (MMU)](README_SBC6502_MemoryManagmentUnit.md) &nbsp;&nbsp; <sub>[Memory (ROM/RAM)](README_SBC6502_Memory.md)</sub> &nbsp;&nbsp; <sub>[I/O](README_SBC6502_IO.md)</sub>
+## <sub>[Bus/Backplane](README_SBC6502_Backplane.md)</sub> &nbsp;&nbsp; [Processor/Memory Managment Unit (MMU)](README_SBC6502_MemoryManagmentUnit.md) &nbsp;&nbsp; <sub>[Memory Map](README_SBC6502_MemoryMap.md)</sub>
 
 <!--- MARKUP.INSERT.TEXT.START: ID=SBC6502.Header -->
 ***A lifelong learning experience ...***
@@ -46,12 +46,12 @@ The MMU provides a protected Kernal Mode by intercepting the BRK and RTI instruc
 * R0 - Mode Register (0x0200)
 
 ```
-    ┌─┬─┬───────────┐
-    │7 6 5 4 3 2 1 0│
-    └┬┴┬┴─────┬─────┘
-     │ │      └───────┤ PID (1-6 bits) 
-     │ │              
-     │ └──────────────┤ ~Kernel Mode (0 is enabled) / User Mode (1 is enabled)
-     │                
-     └────────────────┤ ~Boot Mode (0 is enabled) / Address Translate Mode (1 is enanled)
+  ┌─┬─┬───────────┐
+  │7 6 5 4 3 2 1 0│
+  └┬┴┬┴─────┬─────┘
+   │ │      └───────┤ PID (1-6 bits) 
+   │ │              
+   │ └──────────────┤ ~Kernel Mode (0 is enabled) / User Mode (1 is enabled)
+   │                
+   └────────────────┤ ~Boot Mode (0 is enabled) / Address Translate Mode (1 is enabled)
 ```
