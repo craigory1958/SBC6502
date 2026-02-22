@@ -1,0 +1,20 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "f13fafbe-90f7-4c04-b705-fad2d4aaab66")
+	(paper "A0")
+	(lib_symbols)
+	(bus_alias "SBCbus"
+		(members ".EA[0..19]" ".D[0..7]" ".BEI" ".BEO" ".CLK" ".~{IRQ}" ".PHI2"
+			".~{NMI}" ".R/~{W}" ".~{RES}" ".*EA[0..15]" ".*D[0..7]" ".*BEI" ".*BEO"
+			".*~{DMAA}" ".*~{DMAR}" ".*R/~{W}" ".~{BOOT}" ".SBC"
+		)
+	)
+	(bus_alias "W65C02S"
+		(members "uP.A[0..15]" "uP.D[0..7]" "uP.BE" "uP.~{IRQ}" "uP.ML" "uP.~{NMI}"
+			"uP.PHI10" "uP.PHI2" "uP.PHI2O" "uP.R/~{W}" "uP.RDY" "uP.~{RES}" "uP.SO"
+			"uP.SYNC" "uP.VP"
+		)
+	)
+)

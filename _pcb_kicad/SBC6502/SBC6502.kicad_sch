@@ -1,0 +1,266 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "40db3720-a76f-48b9-939e-35b7a33b1046")
+	(paper "USLedger")
+	(lib_symbols)
+	(sheet
+		(at 25.4 29.21)
+		(size 59.69 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "10ff873c-6f5a-42f1-abda-65d9b0270a42")
+		(property "Sheetname" "Backplane"
+			(at 25.4 28.4984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SBC6502_Backplane.kicad_sch"
+			(at 25.4 66.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SBC6502"
+				(path "/40db3720-a76f-48b9-939e-35b7a33b1046"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 95.25 29.21)
+		(size 59.69 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "37a8711d-2bf9-4fd4-936f-0897eeec97af")
+		(property "Sheetname" "Interconnects"
+			(at 95.25 28.4984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SBC6502_Interconnects.kicad_sch"
+			(at 95.25 66.6246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SBC6502"
+				(path "/40db3720-a76f-48b9-939e-35b7a33b1046"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 95.25 82.55)
+		(size 59.69 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "429258d1-537f-4d00-9590-237f3f6dc0a9")
+		(property "Sheetname" "CPU"
+			(at 95.25 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SBC6502_CPU.kicad_sch"
+			(at 95.25 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SBC6502"
+				(path "/40db3720-a76f-48b9-939e-35b7a33b1046"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 82.55)
+		(size 59.69 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7513c875-fa7b-45c9-b87d-ff1b0d2298f1")
+		(property "Sheetname" "Frontpanel"
+			(at 25.4 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SBC6502_Frontpanel.kicad_sch"
+			(at 25.4 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SBC6502"
+				(path "/40db3720-a76f-48b9-939e-35b7a33b1046"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 165.1 82.55)
+		(size 59.69 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c0d88061-b933-4651-9e95-d5e9908b7aff")
+		(property "Sheetname" "MMU"
+			(at 165.1 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SBC6502_MMU.kicad_sch"
+			(at 165.1 119.9646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SBC6502"
+				(path "/40db3720-a76f-48b9-939e-35b7a33b1046"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 132.08)
+		(size 59.69 35.56)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "c6d62cc7-8742-47c0-925c-8b995e203f80")
+		(property "Sheetname" "Memory"
+			(at 25.4 131.3684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "SBC6502_Memory.kicad_sch"
+			(at 25.4 168.2246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SBC6502"
+				(path "/40db3720-a76f-48b9-939e-35b7a33b1046"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

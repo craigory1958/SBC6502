@@ -5,11 +5,11 @@
 //  ┌─┬─┬───────────┐
 //  │7 6 5 4 3 2 1 0│
 //  └┬┴┬┴─────┬─────┘
-//   │ │      └───────┤ PID (1-6 bits) 
+//   │ │      └───────┤ PID (1-6 bits), 1-64 processes/users
 //   │ │              
 //   │ └──────────────┤ ~Kernel Mode (0 is enabled) / User Mode (1 is enabled)
 //   │                
-//   └────────────────┤ ~Boot Mode (0 is enabled) / Address Translate Mode (1 is enanled)
+//   └────────────────┤ ~Boot Mode (0 is enabled) / MMU Mode (1 is enanled)
 //                    
 //       
 //
@@ -27,9 +27,9 @@
 //  ┌───────┬───────┐
 //  │7 6 5 4 3 2 1 0│
 //  └───┬───┴───┬───┘
-//      │       └─────┤ # Page Offset Bits (0-15 bits)
+//      │       └─────┤ # Page Offset Bits (valid: 7-15 bits), page sizes of 128 thru 32768 bytes
 //      │             
-//      └─────────────┤ # Page Segment Bits (0-15 bits)
+//      └─────────────┤ # Page Segment Bits (valid: 1-9 bits)
 //                    
 //
 //
@@ -38,9 +38,9 @@
 //  ┌───────────────┐
 //  │7 6 5 4 3 2 1 0│
 //  └──┬──┴────┬────┘
-//     │       └──────┤ # Effective Address Bits (0-31 bits)
+//     │       └──────┤ # Effective Address Bits (valid: 8-24 bits)
 //     │             
-//     └──────────────┤ # PID Bits (0-6 bits)
+//     └──────────────┤ # PID Bits (valid: 1-6 bits)
 //                   
 //
 //
